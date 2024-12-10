@@ -109,6 +109,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   .utility-bar__grid.page-width {
     padding-left: 3.2rem;
     padding-right: 3.2rem;
+    
   }
 
   .page-width--narrow {
@@ -2935,6 +2936,7 @@ details-disclosure > details {
   background: rgb(var(--color-background));
   background: var(--gradient-background);
   background-attachment: fixed;
+  background-color: black;
 }
 
 @media screen and (forced-colors: active) {

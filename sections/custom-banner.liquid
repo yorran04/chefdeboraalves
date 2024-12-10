@@ -1,0 +1,34 @@
+{{ 'component-banner.css' |  asset_url |  stylesheet_tag }}
+
+
+{%- style -%}
+
+{%- endstyle -%}
+
+<section class="video-banner">   
+  <div class="video-container">
+    <video autoplay loop muted playsinline>
+      <source src="{{ section.settings.video-banner |  video_tag }}">
+    </video>
+  </div>
+</section>
+
+
+{% schema %}
+{
+    "name": "custom-banner",
+    "settings": [
+         {
+            "type": "video",
+            "id": "video-banner",
+            "label": "video"
+         }
+        ],
+        "presets": [
+            {
+                "name": "banner personalizado"
+            }
+        
+        ]   
+}
+{% endschema %}
