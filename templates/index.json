@@ -5,9 +5,21 @@
       "settings": {
         "video-banner": "shopify:\/\/files\/videos\/Short 1.mp4"
       }
+    },
+    "grid_produtos_JDd7FL": {
+      "type": "grid-produtos",
+      "settings": {
+        "bg-img1": "shopify:\/\/shop_images\/blueberries-in-hand.jpg",
+        "text-img1": "",
+        "bg-img2": "shopify:\/\/shop_images\/hamburger-and-fries.jpg",
+        "text-img2": "",
+        "bg-img3": "shopify:\/\/shop_images\/steak-and-flames-on-the-grill.jpg",
+        "text-img3": ""
+      }
     }
   },
   "order": [
-    "custom_banner_iYQ9RN"
+    "custom_banner_iYQ9RN",
+    "grid_produtos_JDd7FL"
   ]
 }

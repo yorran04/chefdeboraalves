@@ -1,0 +1,72 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  margin-top: 20px;
+}
+.container .grid1 {
+  width: 50%;
+  height: 400px;
+  padding: 10px;
+}
+.container .grid1 .item1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.container .grid1 .item1 h2 {
+  margin-left: 20px;
+  color: white;
+  font-weight: 800;
+}
+.container .grid1 .item1 img {
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.container .grid2 {
+  width: 50%;
+  height: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.container .grid2 .item2 {
+  width: 100%;
+  height: 50%;
+  border-radius: 15px;
+}
+.container .grid2 .item2 h2 {
+  margin-left: 20px;
+  color: white;
+  font-weight: 800;
+}
+.container .grid2 .item2 img {
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.container .grid2 .item3 {
+  width: 100%;
+  height: 50%;
+  border-radius: 15px;
+}
+.container .grid2 .item3 h2 {
+  margin-left: 20px;
+  color: white;
+  font-weight: 800;
+}
+.container .grid2 .item3 img {
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}/*# sourceMappingURL=component-grid-produto.css.map */
