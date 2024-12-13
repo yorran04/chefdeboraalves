@@ -5,7 +5,16 @@
 
 {%- endstyle -%}
 
-<section class="video-banner">   
+<section class="video-banner">  
+  <header>
+    <div class="container-header">
+      <h3>Debora Alves</h3>
+      <ul>
+        <li>Home</li>
+        <li>Sobre</li>
+      </ul>
+    </div>
+  </header> 
   <div class="video-container">
     <video autoplay loop muted playsinline>
       <source src="{{ section.settings.video-banner |  video_tag }}">

@@ -4,6 +4,9 @@
   "sections": {
     "header": {
       "type": "header",
+      "custom_css": [
+        "header{display:none;}"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
