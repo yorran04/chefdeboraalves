@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+  }
+  .container .imagem {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .container .imagem img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 25%;
+       object-position: 25%;
+  }
+  .container .description {
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .container .description h2 {
+    color: white;
+    font-size: 4rem;
+  }
+  
