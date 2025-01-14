@@ -1,0 +1,42 @@
+{{ "aboutme.css" |  asset_url |  stylesheet_tag }}
+
+<section id="section1">
+    <div class="container">
+        <div class="content-img">
+            <img src="{{ section.settings.img_aboutme |  image_url: width: 300 |  image_tag  }}" alt="imagem da chef">
+        </div>
+        <div class="description">
+        <h2>{{ section.settings.text_aboutme }}</h2>
+        <p style="font-size: 1.5rem; color: white">{{ section.settings.text_area }}</p>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "sobre-mim",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "img_aboutme",
+            "label": "Imagem sobre mim"
+        },
+        {
+            "type": "richtext",
+            "id": "text_aboutme",
+            "label": "Texto Principal"
+        },
+        {
+            "type": "textarea",
+            "id": "text_area",
+            "label": "Texto Secundario"
+        }
+        
+        ],
+        "presets": [
+            {
+                "name": "sobre-mim"
+            }
+        ]
+}
+{% endschema %}

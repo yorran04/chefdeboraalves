@@ -1,0 +1,132 @@
+{%- assign number = section.settings.whats_number -%}
+{%- assign message = section.settings.message_text -%}
+{%- assign is_tooltip = section.settings.is_tooltip -%}
+{%- assign text_tooltip = section.settings.text_tooltip -%}
+
+<style>
+  .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  .button-whatsapp .link-btn {
+    background: #0d9f16;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .button-whatsapp svg {
+    width: 30px;
+  }
+  .button-whatsapp .link-btn {
+    @media screen and (min-width: 1280px) {
+      max-width: max-content;
+    }
+  }
+  .whatsapp .tooltip {
+    position: absolute;
+    top: -40px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 22px;
+    max-width: 300px;
+    color: #333;
+    font-size: 14px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .whatsapp .tooltip::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #f0f0f0 transparent transparent transparent;
+  }
+  .whatsapp .tooltip .tooltip-close {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    color: #fff;
+    background: #000;
+    padding: 1px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 1px #fff;
+  }
+
+</style>
+
+<div class="whatsapp">
+  {% if is_tooltip %}
+    <span class="tooltip">
+      <div class="tooltip-close">X</div>
+      {{ text_tooltip }}
+    </span>
+  {% endif %}
+  <a target="_blank" href="https://api.whatsapp.com/send?phone=55{{ number }}&text={{ message }}">
+    {% render 'whatsapp' %}
+  </a>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const close = document.querySelector(".tooltip-close")
+    const tooltip = document.querySelector(".tooltip")
+    close.addEventListener("click", () => {
+      tooltip.style.display = "none"
+    })
+  })
+</script>
+
+{% schema %}
+{
+  "name": "Whatsapp",
+  "limit": 1,
+  "enabled_on": {
+    "groups": ["footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "whats_number",
+      "label": "Número do telefone",
+      "info": "ex.: 11987654321"
+    },
+    {
+      "type": "text",
+      "id": "message_text",
+      "label": "Mensagem pré definida",
+      "info": "ex.: Olá gostaria de mais informações"
+    },
+    {
+      "type": "checkbox",
+      "id": "is_tooltip",
+      "label": "mostrar caixa de diálogo",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "text_tooltip",
+      "label": "texto caixa de diálogo",
+      "default": "Ajuda?"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Whatsapp"
+    }
+  ]
+}
+{% endschema %}

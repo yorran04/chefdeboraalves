@@ -2,33 +2,26 @@
 {{ "component-grid-produto.css" |  asset_url |  stylesheet_tag }}
 
 {% style %}
-    .item1{
-       
-    }
+
 {% endstyle %}
 
 
 
-<section style="display: flex; flex-direction:column;">
-    <h1 style="text-align: center; color: white">Menu</h1>
-    <div class="container">
+<section class="section_produtos" style="display: flex; flex-direction:column;">
+    <h1 style="text-align: center; color: white">Serviços</h1>
+    <div class="container_grid">
         
-        <div class="grid1">
-            <div class="item1">
-                <h2 style="position: absolute;">{{ section.settings.text-img1 }}</h2>
-                <img src="{{ section.settings.bg-img1 |  img_url: '' }}" width="100%" height="100%" alt="">
-            </div>
-        </div>
-        <div class="grid2">
-            <div class="item2">
-                <h2 style="position: absolute;">{{ section.settings.text-img2 }}</h2>
-                <img src="{{ section.settings.bg-img2 |  img_url: '' }}" width="100%" height="100%" alt="">
-            </div>
-            <div class="item3">
-                <h2 style="position: absolute;">{{ section.settings.text-img3 }}</h2>
-                <img src="{{ section.settings.bg-img3 |  img_url: '' }}" width="100%" height="100%" alt="">
-            </div>
-        </div>
+    <div class="grid1">
+       <img src="{{ section.settings.bg-img1 |  image_url: width: 300 |  image_tag }}" alt="">
+    </div>
+
+    <div class="grid2">
+        <img src="{{ section.settings.bg-img2 |  image_url: width: 300 |  image_tag }}" alt="">
+    </div>
+
+    <div class="grid3">
+        <img src="{{ section.settings.bg-img3 |  image_url: width: 300 |  image_tag }}" alt="">
+    </div>
     </div>
 </section>
 

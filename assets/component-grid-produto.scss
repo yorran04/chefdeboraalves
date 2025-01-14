@@ -1,87 +1,44 @@
-
-.container{
-    width: 100%;
+.section_produtos{
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    height: auto;
-    display: flex;
-    margin-top: 20px;
 
-
-
-    .grid1{
-        width: 50%;
-        height: 400px;
-        padding: 10px;
-
-
-
-        .item1{
+    .container_grid{
+        max-width: 100%;
+        display: grid;
+        grid-template-areas: 
+        
+        "grid01 grid01 grid02 grid02"
+        "grid01 grid01 grid02 grid02"
+        "grid01 grid01 grid03 grid03"
+        "grid01 grid01 grid03 grid03"
+        ;
+        gap: 10px;
+    
+    
+        .grid1{
+            grid-area: grid01;
             width: 100%;
             height: 100%;
-            border-radius: 15px;
+            overflow: hidden;
+            background-color: red;
+    
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    
+        .grid2{
+            grid-area: grid02;
+            background-color: gray;
+        }
+    
+        .grid3{
+            grid-area: grid03;
+            background-color: wheat;
             
-            h2{
-                margin-left: 20px;
-                color: white;
-                font-weight: 800;
-            }
-
-            img{
-                border-radius: 15px;
-                object-fit: cover;
-                object-position: center;
-                
-            }
-        }
-    }
-
-    .grid2{
-        width: 50%;
-        height: 400px;
-        padding: 10px;
-   
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-
-        .item2{
-            width: 100%;
-            height: 50%;
-            border-radius: 15px;
-
-            h2{
-                margin-left: 20px;
-                color: white;
-                font-weight: 800;
-            }
-           
-
-            img{
-                border-radius: 15px;
-                object-fit: cover;
-                object-position: center;
-                
-            }
-        }
-
-        .item3{
-            width: 100%;
-            height: 50%;
-            border-radius: 15px;
-
-            h2{
-                margin-left: 20px;
-                color: white;
-                font-weight: 800;
-            }
-
-            img{
-                border-radius: 15px;
-                object-fit: cover;
-                object-position: center;
-                
-            }
         }
     }
 }

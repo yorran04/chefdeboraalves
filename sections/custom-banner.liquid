@@ -17,9 +17,7 @@
   </div>
 </section>
 
-<div id="section1" class="section">
-{%  render 'sobre_mim' , image_url: section.settings.img_about, text_test: section.settings.texto-teste, paragrafo_about: section.settings.paragrafo %} 
-</div>
+
 
 
 
@@ -33,22 +31,7 @@
             "type": "video",
             "id": "video-banner",
             "label": "video"
-         },
-         {
-          "type": "text",
-          "id": "texto-teste",
-          "label": "texto teste"
-         },
-         {
-            "type": "textarea",
-            "id": "paragrafo",
-            "label": "paragrafo"
-         },
-         {
-            "type": "image_picker",
-            "id": "img_about",
-            "label": "Imangem"
-        }
+         }
         ],
         "presets": [
             {
@@ -58,6 +41,7 @@
         ]   
 }
 {% endschema %}
+
 
 <script>
   let lastScrollTop = 0;

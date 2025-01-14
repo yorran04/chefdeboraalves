@@ -8,37 +8,30 @@
     align-items: center; 
     overflow: hidden;
 
-    .container-header{
-        position: absolute;
-        width: 100%;
+    .nave{
+        position: fixed;
         top: 0;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        padding:10px 45px;
         display: flex;
         justify-content: space-between;
-        padding: 0 50px;
+        transition: transform 0.3s ease;
+        transform: translateY(-100%);
+        z-index: 999; 
 
-        h3{
-            font-size: 24px;
-            color: black;
-            font-weight: 800;
-            border: 1px solid white;
-            border-radius: 10px;
-            padding: 5px;
-            background-color: white;
-            opacity: 30%;
-        }
-
-        ul{
+        .links{
             display: flex;
             gap: 20px;
+        }
 
-           li{
-            color: white;
-            font-size: 24px;
-            list-style: none;
-            
-           }
-           
-           
+        a{
+            position: relative;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 2.5rem;
+            transition: color 0.3s ease;
         }
     }
 
@@ -59,6 +52,26 @@
       }
 
   }
+
+
+.links a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease, transform 0.3s ease;
+    transform: translateX(-50%) 
+
+}
+
+.links a:hover::after,
+.links a:focus::after{
+    width: 100%;
+}
+
 
 @media (max-width: 530px) {
     .video-container{
