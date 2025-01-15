@@ -7,19 +7,22 @@
 
 
 
-<section class="section_produtos" style="display: flex; flex-direction:column;">
-    <h1 style="text-align: center; color: white">Serviços</h1>
+<section id="servicos" class="section_produtos" style="display: flex; flex-direction:column;">
+    <h1 style="text-align: center; color: white; font-weight: 600;">Serviços</h1>
     <div class="container_grid">
         
-    <div class="grid1">
-       <img src="{{ section.settings.bg-img1 |  image_url: width: 300 |  image_tag }}" alt="">
+    <div id="grid1" class="box_grid">
+        <h3 class="texto_img">{{ section.settings.text-img1 }}</h3>
+       <img class="img_p" src="{{ section.settings.bg-img1 |  image_url: width: 500 |  image_tag }}" alt="">
     </div>
 
-    <div class="grid2">
+    <div id="grid2" class="box_grid">
+        <h3 class="texto_img">{{ section.settings.text-img2 }}</h3>
         <img src="{{ section.settings.bg-img2 |  image_url: width: 300 |  image_tag }}" alt="">
     </div>
 
-    <div class="grid3">
+    <div id="grid3" class="box_grid">
+        <h3 class="texto_img">{{ section.settings.text-img3 }}</h3>
         <img src="{{ section.settings.bg-img3 |  image_url: width: 300 |  image_tag }}" alt="">
     </div>
     </div>

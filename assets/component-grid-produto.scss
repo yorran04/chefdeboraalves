@@ -1,7 +1,8 @@
 .section_produtos{
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
     margin: 0 auto;
+    padding: 40px;
 
     .container_grid{
         max-width: 100%;
@@ -16,29 +17,52 @@
         gap: 10px;
     
     
-        .grid1{
+        #grid1{
             grid-area: grid01;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background-color: red;
-    
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-        }
-    
-        .grid2{
-            grid-area: grid02;
-            background-color: gray;
-        }
-    
-        .grid3{
-            grid-area: grid03;
-            background-color: wheat;
+           
             
         }
+    
+        #grid2{
+            grid-area: grid02;
+           
+        }
+    
+        #grid3{
+            grid-area: grid03;
+          
+            
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .box_grid{
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+
+            &:hover{
+                transform:scale(0.9);
+            }
+
+            .texto_img{
+                position: absolute;
+                color: white;
+                font-weight: 600;
+                font-size: 2rem;
+                top: 0;
+                left: 10px;
+            }
+        }
+
+       
     }
+
 }

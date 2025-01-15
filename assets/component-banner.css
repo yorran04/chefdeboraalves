@@ -15,7 +15,7 @@
   background-color: transparent;
   padding: 10px 45px;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   transition: transform 0.3s ease;
   transform: translateY(-100%);
   z-index: 999;
