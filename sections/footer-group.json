@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
@@ -9,7 +7,6 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
->>>>>>> 44506713eb88a52407c934ece41796cddb345880
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -25,9 +22,30 @@
     },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "image_GtpPHW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Captura_de_tela_2025-01-16_144752.png",
+            "image_width": 235,
+            "alignment": "center"
+          }
+        },
+        "text_PnYFep": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Contato</strong>",
+            "subtext": "<p><strong>Telefone:</strong> (11) 95741-3588</p><p><strong>E-mail: </strong>debora.alves.ludi@gmail.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_GtpPHW",
+        "text_PnYFep"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
