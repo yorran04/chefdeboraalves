@@ -15,43 +15,87 @@
         "video-banner": "shopify://files/videos/Short 1.mp4"
       }
     },
+    "sobremim_Vt7JVq": {
+      "type": "sobremim",
+      "settings": {
+        "img_aboutme": "shopify://shop_images/Vianat_-_Debora-25.jpg",
+        "text_aboutme": "<p><strong>Conheça sua Personal Chef</strong></p>",
+        "text_area": "Olá! Sou Débora Alves, uma Chef de cozinha com mais de uma década de experiência.\nFormada em Gastronomia pela Faculdade Anhanguera, com especializações pelo SENAC\ne uma enriquecedora passagem pela Europa, onde aperfeiçoei minhas habilidades.\n\nEspecializada em pratos inovadores e técnicas modernas, transformo refeições em\nexperiências memoráveis. Ofereço uma experiência gastronômica única e personalizada,\nadaptada aos seus gostos e preferências.\n\nEstou ansiosa para criar momentos deliciosos e inesquecíveis ao seu lado!"
+      }
+    },
     "grid_produtos_JDd7FL": {
       "type": "grid-produtos",
       "settings": {
-<<<<<<< HEAD
-        "bg-img1": "shopify:\/\/shop_images\/Pratos_6.jpg",
-        "text-img1": "<p><strong>Jantares Privativos<\/strong><\/p>",
-        "bg-img2": "shopify:\/\/shop_images\/hamburger-and-fries.jpg",
-        "text-img2": "<p><strong>Eventos e Festas<\/strong><\/p>",
-        "bg-img3": "shopify:\/\/shop_images\/Pratos_11.jpg",
-        "text-img3": "<p><strong>Marmitas Personalizadas<\/strong><\/p>"
-=======
+        "image_overlay_opacity": 50,
         "bg-img1": "shopify://shop_images/Pratos_6.jpg",
         "text-img1": "<p><strong>Jantares Privativos</strong></p>",
         "bg-img2": "shopify://shop_images/hamburger-and-fries.jpg",
         "text-img2": "<p><strong>Eventos e Festas</strong></p>",
         "bg-img3": "shopify://shop_images/Pratos_11.jpg",
         "text-img3": "<p><strong>Marmitas Personalizadas</strong></p>"
->>>>>>> 44506713eb88a52407c934ece41796cddb345880
       }
     },
-    "sobremim_Vt7JVq": {
-      "type": "sobremim",
+    "multicolumn_phGUKq": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_j63M4g": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/two-pizzas-and-wine.jpg",
+            "title": "<strong>Jantares Privativos</strong>",
+            "text": "<p>Menus personalizados para<br/>encontros românticos ou<br/>celebrações especiais.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tdtgb6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/steak-and-flames-on-the-grill.jpg",
+            "title": "<strong>Eventos e Festas</strong>",
+            "text": "<p>Experiências gastronômicasmemoráveis para reuniões efestas.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ccd3gX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/blueberries-in-hand.jpg",
+            "title": "<strong>Marmitas Personalizadas</strong>",
+            "text": "<p>Adequadas a dietas específicase restrições alimentares.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_j63M4g",
+        "column_tdtgb6",
+        "column_ccd3gX"
+      ],
       "settings": {
-<<<<<<< HEAD
-        "img_aboutme": "shopify:\/\/shop_images\/Vianat_-_Debora-25.jpg",
-        "text_aboutme": "<p><strong>Conheça sua Personal Chef<\/strong><\/p>",
-=======
-        "img_aboutme": "shopify://shop_images/Vianat_-_Debora-25.jpg",
-        "text_aboutme": "<p><strong>Conheça sua Personal Chef</strong></p>",
->>>>>>> 44506713eb88a52407c934ece41796cddb345880
-        "text_area": "Olá! Sou Débora Alves, uma Chef de cozinha com mais de uma década de experiência.\nFormada em Gastronomia pela Faculdade Anhanguera, com especializações pelo SENAC\ne uma enriquecedora passagem pela Europa, onde aperfeiçoei minhas habilidades.\n\nEspecializada em pratos inovadores e técnicas modernas, transformo refeições em\nexperiências memoráveis. Ofereço uma experiência gastronômica única e personalizada,\nadaptada aos seus gostos e preferências.\n\nEstou ansiosa para criar momentos deliciosos e inesquecíveis ao seu lado!"
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "custom_banner_iYQ9RN",
     "sobremim_Vt7JVq",
-    "grid_produtos_JDd7FL"
+    "grid_produtos_JDd7FL",
+    "multicolumn_phGUKq"
   ]
 }
