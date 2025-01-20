@@ -66,6 +66,7 @@
         "column_tdtgb6",
         "column_ccd3gX"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
