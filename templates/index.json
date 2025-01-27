@@ -15,14 +15,6 @@
         "video-banner": "shopify://files/videos/Short 1.mp4"
       }
     },
-    "sobremim_Vt7JVq": {
-      "type": "sobremim",
-      "settings": {
-        "img_aboutme": "shopify://shop_images/Vianat_-_Debora-25.jpg",
-        "text_aboutme": "<p><strong>Conheça sua Personal Chef</strong></p>",
-        "text_area": "Olá! Sou Débora Alves, uma Chef de cozinha com mais de uma década de experiência.\nFormada em Gastronomia pela Faculdade Anhanguera, com especializações pelo SENAC\ne uma enriquecedora passagem pela Europa, onde aperfeiçoei minhas habilidades.\n\nEspecializada em pratos inovadores e técnicas modernas, transformo refeições em\nexperiências memoráveis. Ofereço uma experiência gastronômica única e personalizada,\nadaptada aos seus gostos e preferências.\n\nEstou ansiosa para criar momentos deliciosos e inesquecíveis ao seu lado!"
-      }
-    },
     "grid_produtos_JDd7FL": {
       "type": "grid-produtos",
       "settings": {
@@ -74,6 +66,7 @@
         "column_tdtgb6",
         "column_ccd3gX"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -90,12 +83,19 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "sobremim_Vt7JVq": {
+      "type": "sobremim",
+      "settings": {
+        "text_aboutme": "<p><strong>Conheça sua Personal Chef</strong></p>",
+        "text_area": "Olá! Sou Débora Alves, uma Chef de cozinha com mais de uma década de experiência.\nFormada em Gastronomia pela Faculdade Anhanguera, com especializações pelo SENAC\ne uma enriquecedora passagem pela Europa, onde aperfeiçoei minhas habilidades.\n\nEspecializada em pratos inovadores e técnicas modernas, transformo refeições em\nexperiências memoráveis. Ofereço uma experiência gastronômica única e personalizada,\nadaptada aos seus gostos e preferências.\n\nEstou ansiosa para criar momentos deliciosos e inesquecíveis ao seu lado!"
+      }
     }
   },
   "order": [
     "custom_banner_iYQ9RN",
-    "sobremim_Vt7JVq",
     "grid_produtos_JDd7FL",
-    "multicolumn_phGUKq"
+    "multicolumn_phGUKq",
+    "sobremim_Vt7JVq"
   ]
 }
