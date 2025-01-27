@@ -1,12 +1,6 @@
 
 {{ "component-grid-produto.css" |  asset_url |  stylesheet_tag }}
 
-{% style %}
-    .img_produto{
-        opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
-    }
-{% endstyle %}
-
 
 
 <section id="servicos" class="section_produtos" style="display: flex; flex-direction:column;">
@@ -15,17 +9,21 @@
         
     <div id="grid1" class="box_grid">
         <h3 class="texto_img">{{ section.settings.text-img1 }}</h3>
-       <img class="img_produto" src="{{ section.settings.bg-img1 |  image_url: width: 500 |  image_tag }}" alt="">
-    </div>
+        <img class="img_produto " src="{{ section.settings.bg-img1 |  image_url: width: 500 |  image_tag }}" alt="">
+        <img class="img_produto troca_img1" src="{{ section.settings.bg-secundaria1 |  image_url: width: 500 |  image_tag }}" alt="">
+       
+       </div>
 
     <div id="grid2" class="box_grid">
         <h3 class="texto_img">{{ section.settings.text-img2 }}</h3>
         <img class="img_produto" src="{{ section.settings.bg-img2 |  image_url: width: 300 |  image_tag }}" alt="">
+        <img class="img_produto troca_img2" src="{{ section.settings.bg-secundaria2 |  image_url: width: 500 |  image_tag }}" alt="">
     </div>
 
     <div id="grid3" class="box_grid">
         <h3 class="texto_img">{{ section.settings.text-img3 }}</h3>
         <img class="img_produto" src="{{ section.settings.bg-img3 |  image_url: width: 300 |  image_tag }}" alt="">
+        <img class="img_produto troca_img3" src="{{ section.settings.bg-secundaria3 |  image_url: width: 300 |  image_tag }}" alt="">
     </div>
     </div>
 </section>
@@ -58,6 +56,11 @@
             "label": "Imagem Principal"
         },
         {
+            "type": "image_picker",
+            "id": "bg-secundaria1",
+            "label": "Imagem Principal"
+        },
+        {
             "type": "richtext",
             "id": "text-img1",
             "label": "Texto Imagem n°1"
@@ -68,6 +71,11 @@
             "label": "Imagem Secundaria"
         },
         {
+            "type": "image_picker",
+            "id": "bg-secundaria2",
+            "label": "Imagem Principal"
+        },
+        {
             "type": "richtext",
             "id": "text-img2",
             "label": "Texto Imagem n°2"
@@ -76,6 +84,11 @@
             "type": "image_picker",
             "id": "bg-img3",
             "label": "Imagem Secundaria"
+        },
+        {
+            "type": "image_picker",
+            "id": "bg-secundaria3",
+            "label": "Imagem Principal"
         },
         {
             "type": "richtext",
@@ -90,3 +103,44 @@
         ]
 }
 {% endschema %}
+
+
+<script>
+    let img1 = document.querySelector('.troca_img1')
+    let img2 = document.querySelector('.troca_img2')
+    let img3 = document.querySelector('.troca_img3')
+
+    function trocaImg1 ( ) {
+
+    if(img1.style.opacity == 0){
+        img1.style.opacity = 1
+    }else{
+        img1.style.opacity = 0
+    }
+
+    }
+
+    function trocaImg2 ( ) {
+
+if(img2.style.opacity == 0){
+    img2.style.opacity = 1
+}else{
+    img2.style.opacity = 0
+}
+
+}
+
+function trocaImg3 ( ) {
+
+if(img3.style.opacity == 0){
+    img3.style.opacity = 1
+}else{
+    img3.style.opacity = 0
+}
+
+}
+
+setInterval(trocaImg1, 3000)
+setInterval(trocaImg2, 3000)
+setInterval(trocaImg3, 3000)
+</script>

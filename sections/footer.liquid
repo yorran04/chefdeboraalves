@@ -79,6 +79,8 @@
                   <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
                 {%- endif -%}
 
+                
+
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
@@ -86,6 +88,11 @@
                     <div class="footer-block__details-content rte">
                       {{ block.settings.subtext }}
                     </div>
+                    <div>
+                    <a href="https://www.instagram.com/chef_deboraalves?igsh=bTFmZnNpdmE2NGoy">
+                     <img src="{{ 'instagram.png' |  asset_url }}" width="40px" height="40px" alt="Instagram">
+                    </a>
+                   </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
                       <ul class="footer-block__details-content list-unstyled">
@@ -344,6 +351,11 @@
           "default": "footer",
           "label": "t:sections.footer.blocks.link_list.settings.menu.label",
           "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_instagram",
+          "label": "Logo Instagran"
         }
       ]
     },
