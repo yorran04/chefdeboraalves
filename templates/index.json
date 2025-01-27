@@ -20,10 +20,13 @@
       "settings": {
         "image_overlay_opacity": 50,
         "bg-img1": "shopify://shop_images/Pratos_6.jpg",
+        "bg-secundaria1": "shopify://shop_images/two-pizzas-and-wine.jpg",
         "text-img1": "<p><strong>Jantares Privativos</strong></p>",
         "bg-img2": "shopify://shop_images/hamburger-and-fries.jpg",
+        "bg-secundaria2": "shopify://shop_images/flame-broiled-steak.jpg",
         "text-img2": "<p><strong>Eventos e Festas</strong></p>",
         "bg-img3": "shopify://shop_images/Pratos_11.jpg",
+        "bg-secundaria3": "shopify://shop_images/steak-and-flames-on-the-grill.jpg",
         "text-img3": "<p><strong>Marmitas Personalizadas</strong></p>"
       }
     },
