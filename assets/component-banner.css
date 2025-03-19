@@ -72,7 +72,7 @@
   }
 
 @media (max-width: 760px) {
-  .video-banner .video-container video{
+  .video-container video{
     object-fit:contain;
   }
 }
