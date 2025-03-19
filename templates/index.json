@@ -12,7 +12,7 @@
     "custom_banner_iYQ9RN": {
       "type": "custom-banner",
       "settings": {
-        "video-banner": "shopify://files/videos/Short 1.mp4"
+        "video-banner": "shopify://files/videos/Deb - video 1 completo.mp4"
       }
     },
     "grid_produtos_JDd7FL": {
@@ -109,6 +109,7 @@
     },
     "video_tAWG9M": {
       "type": "video",
+      "disabled": true,
       "custom_css": [
         ".video-section {width: 400px; height: 400px; overflow: hidden;}",
         ".video-section__media {}"
