@@ -96,12 +96,23 @@
         "text_aboutme": "<p><strong>Conheça sua Personal Chef</strong></p>",
         "text_area": "Olá! Sou Débora Alves, uma Chef de cozinha com mais de uma década de experiência.\nFormada em Gastronomia pela Faculdade Anhanguera, com especializações pelo SENAC\ne uma enriquecedora passagem pela Europa, onde aperfeiçoei minhas habilidades.\n\nEspecializada em pratos inovadores e técnicas modernas, transformo refeições em\nexperiências memoráveis. Ofereço uma experiência gastronômica única e personalizada,\nadaptada aos seus gostos e preferências.\n\nEstou ansiosa para criar momentos deliciosos e inesquecíveis ao seu lado!"
       }
+    },
+    "como_funciona_Khdnmh": {
+      "type": "como_funciona",
+      "custom_css": [
+        ".como_funciona {width: 100%; display: flex; flex-direction: column; align-items: center; letter-spacing: 1px;}",
+        "h3 {color: rgb(255, 120, 40); font-weight: bold; font-size: 30px;}",
+        "h4 {color: rgb(255, 120, 40); font-weight: bold; font-size: 24px;}",
+        "p {color: white;}"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "custom_banner_iYQ9RN",
     "grid_produtos_JDd7FL",
     "multicolumn_phGUKq",
-    "sobremim_Vt7JVq"
+    "sobremim_Vt7JVq",
+    "como_funciona_Khdnmh"
   ]
 }
