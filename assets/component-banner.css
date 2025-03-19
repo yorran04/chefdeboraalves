@@ -67,7 +67,7 @@
 @media (min-width: 760px) {
   .video-banner .video-container video {
     height:500px;
-    object-position: top;
+    object-position: center;
   }
 
 
