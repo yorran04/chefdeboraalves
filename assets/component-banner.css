@@ -64,8 +64,8 @@
 
 @media (min-width: 760px) {
   .video-banner .video-container video {
-    height:900px;
-    object-fit: fill;
+    height:600px;
+    object-position: center;
   }
 
 
