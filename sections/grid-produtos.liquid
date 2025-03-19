@@ -9,21 +9,26 @@
         
     <div id="grid1" class="box_grid">
         <h3 class="texto_img">{{ section.settings.text-img1 }}</h3>
+        <a herf="{{ section.settings.link_jantar }}">
         <img class="img_produto " src="{{ section.settings.bg-img1 |  image_url: width: 500 |  image_tag }}" alt="">
         <img class="img_produto troca_img1" src="{{ section.settings.bg-secundaria1 |  image_url: width: 500 |  image_tag }}" alt="">
-       
+         </a>
        </div>
 
     <div id="grid2" class="box_grid">
         <h3 class="texto_img">{{ section.settings.text-img2 }}</h3>
+        <a href="{{ section.settings.link_eventos }}">
         <img class="img_produto" src="{{ section.settings.bg-img2 |  image_url: width: 300 |  image_tag }}" alt="">
         <img class="img_produto troca_img2" src="{{ section.settings.bg-secundaria2 |  image_url: width: 500 |  image_tag }}" alt="">
+         </a>
     </div>
 
     <div id="grid3" class="box_grid">
         <h3 class="texto_img">{{ section.settings.text-img3 }}</h3>
+        <a href="{{ section.settings.link_marmitas }}">
         <img class="img_produto" src="{{ section.settings.bg-img3 |  image_url: width: 300 |  image_tag }}" alt="">
         <img class="img_produto troca_img3" src="{{ section.settings.bg-secundaria3 |  image_url: width: 300 |  image_tag }}" alt="">
+       </a>
     </div>
     </div>
 </section>
@@ -66,6 +71,11 @@
             "label": "Texto Imagem n°1"
         },
         {
+           "type": "url",
+           "id": "link_jantar",
+           "label": "link Jantar"
+        },
+        {
             "type": "image_picker",
             "id": "bg-img2",
             "label": "Imagem Secundaria"
@@ -81,6 +91,11 @@
             "label": "Texto Imagem n°2"
         },
         {
+            "type": "url",
+            "id": "link_eventos",
+            "label": "link Eventos"
+        },
+        {
             "type": "image_picker",
             "id": "bg-img3",
             "label": "Imagem Secundaria"
@@ -94,7 +109,12 @@
             "type": "richtext",
             "id": "text-img3",
             "label": "Texto Imagem n°3"
-        }        
+        },    
+        {
+            "type": "url",
+            "id": "link_marmitas",
+            "label": "Link Marmitas"
+        }
         ],
         "presets": [
             {
