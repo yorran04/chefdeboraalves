@@ -100,7 +100,7 @@
     "como_funciona_Khdnmh": {
       "type": "como_funciona",
       "custom_css": [
-        ".como_funciona {width: 100%; display: flex; flex-direction: column; align-items: center; letter-spacing: 1px;}",
+        ".como_funciona {width: 100%; display: flex; flex-direction: column; align-items: center; letter-spacing: 1px; padding: 20px;}",
         "h3 {color: rgb(255, 120, 40); font-weight: bold; font-size: 4rem;}",
         "h4 {color: rgb(255, 120, 40); font-weight: bold; font-size: 3rem; margin: 0;}",
         "p {color: white; font-size: 2rem; margin: 0;}"
