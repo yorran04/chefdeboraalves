@@ -70,8 +70,8 @@
     display: flex;
     align-items: start;
     justify-content: center;
-     object-fit:contain;
-    padding: 100px;
+    object-fit:contain;
+    padding: 0 100px;
   }
 
 
