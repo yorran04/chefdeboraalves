@@ -64,12 +64,11 @@
 
 @media (min-width: 760px) {
   .video-banner .video-container video {
-    height:400px;
+    height:700px;
     display: flex;
     align-items: start;
     justify-content: center;
     object-fit:contain;
-    padding: 0 50px;
   }
 
 
