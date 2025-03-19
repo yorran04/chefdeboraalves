@@ -74,6 +74,7 @@
 @media (max-width: 760px) {
   .video-container video{
     object-fit:contain;
+    padding: 100px;
   }
 }
 }/*# sourceMappingURL=component-banner.css.map */
