@@ -109,7 +109,10 @@
     },
     "video_tAWG9M": {
       "type": "video",
-      "custom_css": [],
+      "custom_css": [
+        ".video-section {width: 400px; height: 400px; overflow: hidden;}",
+        ".video-section__media {}"
+      ],
       "settings": {
         "heading": "Video",
         "heading_size": "h2",
