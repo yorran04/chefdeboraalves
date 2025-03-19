@@ -1,6 +1,41 @@
+
+<section>
+  <div class="container">
+    <h2>Por que Escolher um Personal Chef em Casa?</h2>
+    <div class="pq_img">
+     <img src="{{ section.settings.img_escolher |  image_url: width: 500 |  image_tag }}" alt="">
+    </div
+       <h4>Experiência e Paixão: </h4>
+      <p>Chef qualificado com anos de experiência.</p>
+  
+      <h4>Personalização Total: </h4>
+      <p>Menus feitos sob medida.</p>
+  
+      <h4>Conveniência e Conforto:  </h4>
+      <p>Refeições excepcionais sem sair de casa.</p>
+  </div>
+</section>
+
+
+
+
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "escolher chef",
+    "settings": [
+      {
+            "type": "image_picker",
+            "id": "img_escolher",
+            "label": "Imagem Principal"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Pq escolher chef"
+      }
+    ]
   }
 {% endschema %}
