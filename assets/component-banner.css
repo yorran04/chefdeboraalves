@@ -70,4 +70,10 @@
     align-items: start;
     justify-content: center;
   }
+
+@media (max-width: 800px) {
+  .video-banner{
+    height: 800px
+  }
+}
 }/*# sourceMappingURL=component-banner.css.map */
