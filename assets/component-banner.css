@@ -73,7 +73,7 @@
 
 @media (max-width: 800px) {
   .video-banner{
-    height: 800px
+    max-height: 750px;
   }
 }
 }/*# sourceMappingURL=component-banner.css.map */
