@@ -71,12 +71,9 @@
     align-items: start;
     justify-content: center;
      object-fit:contain;
-    padding: 100px;
+    
   }
 
-  .video-banner {
-    padding-top:0;
-  }
 
 }
 }/*# sourceMappingURL=component-banner.css.map */
