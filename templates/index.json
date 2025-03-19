@@ -110,12 +110,15 @@
     "pq_escolher_Wa7wWe": {
       "type": "pq_escolher",
       "custom_css": [
-        "h2{color: rgb(255, 120, 40); font-weight: bold; font-size: 3rem; text-align:center;}",
+        ".container_pq{display:flex; flex-direction: column; align-items:center; justify-content:center;}",
+        ".pq_img {width: 100%; height: 300px; display: flex; justify-content: center; padding: 10px; overflow: hidden;}",
+        "img {width: 100%; height: 100%; object-fit: contain;}",
+        "h2 {color: rgb(255, 120, 40); font-weight: bold; font-size: 3rem; text-align: center;}",
         "h4 {color: rgb(255, 120, 40); font-weight: bold; font-size: 2.5rem; margin: 0; text-align: center;}",
         "p {color: white; font-size: 2rem; margin: 0; text-align: center;}"
       ],
       "settings": {
-        "img_escolher": "shopify://shop_images/Vianat_-_Debora-25.jpg"
+        "img_escolher": "shopify://shop_images/79c94008167516186cb3e60465eb7d72.jpg"
       }
     }
   },
