@@ -63,7 +63,7 @@
 }
 
 @media (min-width: 760px) {
-  .video-container {
+  .video-banner .video-container video {
     height:400px;
     display: flex;
     align-items: start;
